@@ -1,0 +1,37 @@
+body {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.section-info {
+  background-color: rgb(207, 3, 129);
+  padding-top: 100px;
+}
+
+.section-info h1 {
+  font-size: 100px;
+  font-family: 'DotGothic16';
+}
+
+.section-info p {
+  font-size: 25px;
+  font-family: 'Jura';
+}
+
+.get-button {
+  height: 40px;
+  width: 200px;
+  color: rgb(182, 178, 178);
+  background-color: black;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+.get-button:hover {
+  color: black;
+  background: white;
+}

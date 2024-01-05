@@ -1,0 +1,67 @@
+.section-2 {
+  background: rgb(221, 208, 208);
+  font-family: 'Jura';
+  margin: 0px;
+  padding-bottom: 70px;
+  margin-bottom: 0px;
+}
+
+.section-2 p {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.trustee-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+
+.trustee {
+  width: 260px;
+  height: 180px;
+  background: transparent;
+  border-bottom-color: rgb(167, 167, 167);
+  border-color: rgb(167, 167, 167);
+  border-width: thin;
+  border-style: solid;
+  border-right-width: 0px;
+}
+
+.btn-border {
+  border-right-width: thin;
+  border-right-color: rgb(167, 167, 167);
+}
+
+.trustee img {
+  width: 60px;
+  height: 60px;
+}
+
+.highlight-box img {
+  width: 30px;
+  height: 30px;
+}
+
+.highlight-section {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.highlight-box {
+  text-align: left;
+  padding: 20px;
+  width: 350px;
+  height: 200px;
+  background: white;
+  border-color: rgb(167, 167, 167);
+  border-width: thin;
+  border-style: solid;
+  border-right-width: 0px;
+  border-radius: 15px;
+}

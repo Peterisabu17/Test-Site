@@ -1,0 +1,68 @@
+.header {
+  font-family: 'Jura';
+  background: rgb(255, 5, 159);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-tools:hover {
+  background: orangered;
+  border-radius: 15px;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn1 {
+  background: orangered;
+  border: none;
+  border-radius: 15px;
+}
+
+.btn2 {
+  background: orange;
+  border: none;
+  border-radius: 15px;
+}
+
+.dropdown-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  padding-top: 60px;
+}
+
+.dropdown {
+  border-radius: 8px;
+  background: white;
+  display: none;
+  padding: 8px;
+  z-index: 2;
+  max-width: 600px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.feature-button {
+  font-family: 'Jura';
+  background: transparent;
+  border: none;
+}
+
+.blur-logo:hover {
+  transform: rotate(-720deg);
+  filter: saturate(2.0);
+  transition: cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+}
