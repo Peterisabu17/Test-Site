@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="section-1.css" />
     <link rel="stylesheet" href="section-2.css" />
-    <link rel="stylesheet" href="section-3.css">
-    <link rel="stylesheet" href="bottom-landing.css" />
+    <link rel="stylesheet" href="section-3.css" />
+    <link rel="stylesheet" href="style-pricelist.css" />
+    <link rel="stylesheet" href="style-footer.css" />
+    <link rel="stylesheet" href="carbox.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,116 +29,753 @@
       href="https://fonts.googleapis.com/css2?family=Jura&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <section class="section-1">
-      <div class="header">
-        <img
-          src="Assets/src/blur_on_FILL0_wght400_GRAD0_opsz24.svg"
-          alt="logo"
-          class="blur-logo"
-        />
-        <button class="feature-button">
-          Features
-          <svg
-            aria-hidden="true"
-            height="16"
-            viewBox="0 0 16 16"
-            version="1.1"
-            width="16"
-          >
-            <path
-              d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"
-            ></path>
-          </svg>
-          <div class="dropdown-wrapper">
-            <div class="dropdown">
-              <ul class="dropdown-content">
-                <li>
-                  <!-- preview svg -->
-                  <div class="icon-wrapper"></div>
-                  <div class="item-title">
-                    <h3>Previews</h3>
-                    <p>zero config, more innovation</p>
+      <!-- <div class="info-header">
+        <div class=" price-card-label3">
+          <div class="scroll-item">Our Affliate-Vendors</div>
+          <div class="scroll-item">Our Affliate-Vendors</div>
+          <div class="scroll-item">Our Affliate-Vendors</div>
+          <div class="scroll-item">Our Affliate-Vendors</div>
+          <div class="scroll-item">Our Affliate-Vendors</div>
+          <div class="scroll-item">Our Affliate-Vendors</div>
+          <div class="scroll-item">Our Affliate-Vendors</div>
+          <div class="scroll-item">Our Affliate-Vendors</div>
+        </div>
+      <div> -->
+      <header class="menu__wrapper">
+        <div class="menu__bar">
+          <a href="index.html" title="Home" aria-label="home" class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="60"
+              viewBox="0 -960 960 960"
+              width="60"
+            >
+              <path
+                d="M120-380q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm120 340q-17 0-28.5-11.5T200-240q0-17 11.5-28.5T240-280q17 0 28.5 11.5T280-240q0 17-11.5 28.5T240-200Zm0-160q-17 0-28.5-11.5T200-400q0-17 11.5-28.5T240-440q17 0 28.5 11.5T280-400q0 17-11.5 28.5T240-360Zm0-160q-17 0-28.5-11.5T200-560q0-17 11.5-28.5T240-600q17 0 28.5 11.5T280-560q0 17-11.5 28.5T240-520Zm0-160q-17 0-28.5-11.5T200-720q0-17 11.5-28.5T240-760q17 0 28.5 11.5T280-720q0 17-11.5 28.5T240-680Zm160 340q-25 0-42.5-17.5T340-400q0-25 17.5-42.5T400-460q25 0 42.5 17.5T460-400q0 25-17.5 42.5T400-340Zm0-160q-25 0-42.5-17.5T340-560q0-25 17.5-42.5T400-620q25 0 42.5 17.5T460-560q0 25-17.5 42.5T400-500Zm0 300q-17 0-28.5-11.5T360-240q0-17 11.5-28.5T400-280q17 0 28.5 11.5T440-240q0 17-11.5 28.5T400-200Zm0-480q-17 0-28.5-11.5T360-720q0-17 11.5-28.5T400-760q17 0 28.5 11.5T440-720q0 17-11.5 28.5T400-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 480q-25 0-42.5-17.5T500-400q0-25 17.5-42.5T560-460q25 0 42.5 17.5T620-400q0 25-17.5 42.5T560-340Zm0-160q-25 0-42.5-17.5T500-560q0-25 17.5-42.5T560-620q25 0 42.5 17.5T620-560q0 25-17.5 42.5T560-500Zm0 300q-17 0-28.5-11.5T520-240q0-17 11.5-28.5T560-280q17 0 28.5 11.5T600-240q0 17-11.5 28.5T560-200Zm0-480q-17 0-28.5-11.5T520-720q0-17 11.5-28.5T560-760q17 0 28.5 11.5T600-720q0 17-11.5 28.5T560-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 620q-17 0-28.5-11.5T680-240q0-17 11.5-28.5T720-280q17 0 28.5 11.5T760-240q0 17-11.5 28.5T720-200Zm0-160q-17 0-28.5-11.5T680-400q0-17 11.5-28.5T720-440q17 0 28.5 11.5T760-400q0 17-11.5 28.5T720-360Zm0-160q-17 0-28.5-11.5T680-560q0-17 11.5-28.5T720-600q17 0 28.5 11.5T760-560q0 17-11.5 28.5T720-520Zm0-160q-17 0-28.5-11.5T680-720q0-17 11.5-28.5T720-760q17 0 28.5 11.5T760-720q0 17-11.5 28.5T720-680Zm120 300q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Z"
+              />
+            </svg>
+            <!-- <svg
+              aria-label="Vercel logotype"
+              height="22"
+              role="img"
+              viewBox="0 0 283 64"
+            >
+              <path
+                d="M141.68 16.25c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm117.14-14.5c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm-39.03 3.5c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9v-46h9zM37.59.25l36.95 64H.64l36.95-64zm92.38 5l-27.71 48-27.71-48h10.39l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10v14.8h-9v-34h9v9.2c0-5.08 5.91-9.2 13.2-9.2z"
+              ></path>
+            </svg> -->
+          </a>
+          <nav>
+            <ul class="navigation hide">
+              <li>
+                <button>
+                  Features
+                  <svg
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                  >
+                    <path
+                      d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"
+                    ></path>
+                  </svg>
+                </button>
+                <div class="dropdown__wrapper">
+                  <div class="dropdown">
+                    <ul class="list-items-with-description">
+                      <li>
+                        <svg
+                          aria-hidden="true"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+                        </svg>
+                        <div class="item-title">
+                          <h3>Previews</h3>
+                          <p>Zero config, more innovation</p>
+                        </div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M12 4l-8 4l8 4l8 -4l-8 -4" />
+                          <path d="M4 12l8 4l8 -4" />
+                          <path d="M4 16l8 4l8 -4" />
+                        </svg>
+                        <div class="item-title">
+                          <h3>Infrastructure</h3>
+                          <p>Always fast always online</p>
+                        </div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-brand-nextjs"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993"
+                          />
+                          <path d="M15 12v-3" />
+                        </svg>
+                        <div class="item-title">
+                          <h3>Next js</h3>
+                          <p>The native Next.js platform</p>
+                        </div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                          <path d="M3.6 9h16.8" />
+                          <path d="M3.6 15h16.8" />
+                          <path d="M11.5 3a17 17 0 0 0 0 18" />
+                          <path d="M12.5 3a17 17 0 0 1 0 18" />
+                        </svg>
+                        <div class="item-title">
+                          <h3>Edge Functions</h3>
+                          <p>Dynamic pages, static speed</p>
+                        </div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M3 12h4l3 8l4 -16l3 8h4" />
+                        </svg>
+                        <div class="item-title">
+                          <h3>Analytics</h3>
+                          <p>Real-time insights, peak performance</p>
+                        </div>
+                      </li>
+                      <li>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0" />
+                          <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                          <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                        </svg>
+                        <div class="item-title">
+                          <h3>Storage</h3>
+                          <p>Serverless storage for frontend</p>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  title="products"
+                  id="Products"
+                  onclick="location.href='shop.html'"
+                >
+                  Products</a
+                >
+              </li>
+              <li>
+                <a href="#templates" title="Templates"> Templates </a>
+              </li>
+              <li>
+                <a href="#customers" title="Customers"> Customers </a>
+              </li>
+              <li>
+                <a href="#enterprise" title="Enterprise" id="trustees">
+                  Enterprise
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  title="Team"
+                  id="team"
+                  onclick="location.href='team.html'"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a href="#pricing" title="Pricing" id="pricing"> Pricing </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="action-buttons hide">
+          <a href="form-index.html" title="Log in" class="secondary">
+            Log In
+          </a>
+          <a href="form-index.html" title="Sign up" class="primary">
+            Sign up
+          </a>
+        </div>
+        <button aria-label="Open menu" class="burger-menu" type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-menu"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 8l16 0" />
+            <path d="M4 16l16 0" />
+          </svg>
         </button>
-        <div class="header-tools">Platform</div>
-        <div class="header-tools">Docs & Tools</div>
-        <div class="header-tools">Company</div>
-        <div class="header-tools">Pricing</div>
-        <div class="header-tools">Blog</div>
-        <button class="btn1">LOG-IN</button>
-        <button class="btn2">SIGN-UP</button>
-      </div>
-
+      </header>
       <div class="section-info">
         <h1>
-          HOW DEVELOPERS BUILD <br />
-          ONLINE VIDEOS
+          HOW FASHION-ICONS BUILD <br />
+          ONLINE PRESENCE
         </h1>
         <p>
-          Blur is a site the enables you discover most tools needed for a
+          Blur is a site the enables you discover most tools needed for an
           on-demand <br />
           standard wardrobe experience
         </p>
-        <button class="get-button">GET STARTED FOR FREE</button>
+        <button
+          id="button_1"
+          onclick="location.href='form-index.html'"
+          title="Sign up"
+          class="get-button"
+        >
+          GET STARTED FOR FREE
+        </button>
+        <br />
+
+        <button
+          id="button_1"
+          onclick="location.href='form-index.html'"
+          title="Sign up"
+          class="get-demo-button"
+        >
+          Demo
+        </button>
+        <br />
+        <div class="desktop-img">
+          <img src="asstes/panel-desktop.webp" alt="" />
+        </div>
       </div>
     </section>
+
+    <div class="slide-container swiper" id="product-swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/I tuoi Gioielli & Orologi – Gioielli & Orologio dei migliori brand.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/Wilson Women's Classic Visor.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/Fathers Day Gift Ideas Rodd & Gunn.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/Breitling® _ Swiss Luxury Watches of Style, Purpose & Action.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img src="swiper assets/bag.jpg" alt="" class="card-image" />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/Transitional Footwear For Any Occasion - Paces West.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/La Casquette Artichaut Cap.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/Women's Accessories_ Bags, Sunglasses + Hats _ Urban Outfitters.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/Luxury fashion & independent designers _ SSENSE.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img src="swiper assets/shirts.jpg" alt="" class="card-image" />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/3pcs Mock Neck Ribbed Knit Jumper.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img src="swiper assets/Veta Ties.jpg" alt="" class="card-image" />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/13 Best-Selling Perfumes That Never Go Out of Style.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/Faux Pearl Beaded Ruched Bag.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/2pcs Guys Solid Beanie.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/1pc Solid Scarf.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/4 piezas Top de tirantes fruncido con cordón….jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+
+          <div class="card swiper-slide">
+            <img
+              src="swiper assets/Faux Pearl Decor Point Toe Chunky Heeled Ankle Strap Pumps, Black Party Stiletto Heels With Bow-tie Detail And Solid Color Ankle Strap For Women.jpg"
+              alt=""
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="price-card-label">
+      <div class="scroll-item">Our Affliate-Vendors</div>
+      <div class="scroll-item">Our Affliate-Vendors</div>
+      <div class="scroll-item">Our Affliate-Vendors</div>
+      <div class="scroll-item">Our Affliate-Vendors</div>
+      <div class="scroll-item">Our Affliate-Vendors</div>
+      <div class="scroll-item">Our Affliate-Vendors</div>
+      <div class="scroll-item">Our Affliate-Vendors</div>
+      <div class="scroll-item">Our Affliate-Vendors</div>
+    </div>
 
     <section class="section-2">
       <div class="section-container">
         <p>BLUR IS TRUSTED BY</p>
 
-        <div class="trustee-buttons">
+        <div class="trustee-buttons" id="trustee_items">
           <button class="trustee">
-            <img src="Assets/src/adidas-8.svg" alt="">
+            <img src="Assets/src/adidas-8.svg" alt="" />
           </button>
           <button class="trustee">
-            <img src="Assets/src/champion-logo.svg" alt="">
+            <img src="Assets/src/champion-logo.svg" alt="" />
           </button>
           <button class="trustee">
-            <img src="Assets/src/fila-9.svg" alt="">
+            <img src="Assets/src/fila-9.svg" alt="" />
           </button>
           <button class="trustee">
-            <img src="Assets/src/puma-logo.svg" alt="">
+            <img src="Assets/src/puma-logo.svg" alt="" />
           </button>
           <button class="trustee">
-            <img src="Assets/src/lacoste-logo.svg" alt="">
+            <img src="Assets/src/lacoste-logo.svg" alt="" />
           </button>
-          <button class="trustee btn-border" >
-            <img src="Assets/src/nike-8.svg" alt="">
+          <button class="trustee btn-border">
+            <img src="Assets/src/nike-8.svg" alt="" />
+          </button>
+        </div>
+        <br />
+        <div class="trustee-buttons" id="trustee_items">
+          <button class="trustee">
+            <img src="asstes/off-white-logo.svg" alt="" />
+          </button>
+          <button class="trustee">
+            <img src="asstes/prada-1.svg" alt="" />
+          </button>
+          <button class="trustee">
+            <img src="asstes/emporio-armani.svg" alt="" />
+          </button>
+          <button class="trustee">
+            <img src="asstes/gucci-4.svg" alt="" />
+          </button>
+          <button class="trustee">
+            <img src="asstes/demi-print.svg" alt="" />
+          </button>
+          <button class="trustee btn-border">
+            <img src="asstes/copper-mountain.svg" alt="" />
           </button>
         </div>
       </div>
 
+      <div class="trustee-vendors">
+        <img src="asstes/shopify.svg" alt="" />
+        <img src="asstes/shopright-cayman.svg" alt="" />
+        <img src="asstes/monta-plastlogo.svg" alt="" />
+        <img src="asstes/ito-yokado-logo-1.svg" alt="" />
+        <img src="asstes/seychell.svg" alt="" />
+      </div>
+
       <div class="highlight-section">
         <div class="highlight-box">
-          <img src="Assets/src/global-market-icon.svg" alt="">
-          <h1>Global Styles just for <br>your taste</h1>
-          <p>Our main aim is giving you that look you imagine, whatever culture, region or time you desire.</p>
+          <img src="Assets/src/global-market-icon.svg" alt="" />
+          <h1>Global Styles just for <br />your taste</h1>
+          <p>
+            Our main aim is giving you that look you imagine, whatever culture,
+            region or time you desire.
+          </p>
         </div>
 
         <div class="highlight-box">
-          <img src="Assets/src/exchange-money-icon.svg" alt="">
+          <img src="Assets/src/exchange-money-icon.svg" alt="" />
           <h1>Finance Securty</h1>
-          <p>Your money is safe wth us as we do not make payments to out affiliates until your satisfaction if confirmed.</p>
+          <p>
+            Your money is safe wth us as we do not make payments to out
+            affiliates until your satisfaction if confirmed.
+          </p>
         </div>
 
         <div class="highlight-box">
-          <img src="Assets/src/delivery-van-icon.svg" alt="">
+          <img src="Assets/src/delivery-van-icon.svg" alt="" />
           <h1>Swift Connections</h1>
-          <p>We are quick n sourcing and delivering your items once your order is placed, and inform you if any changes may occur.</p>
+          <p>
+            We are quick in sourcing and delivering your items once your order
+            is placed, and inform you if any changes may occur.
+          </p>
         </div>
 
         <div class="highlight-box">
-          <img src="Assets/src/customer-experience-icon.svg" alt="">
+          <img src="Assets/src/customer-experience-icon.svg" alt="" />
           <h1>Purchase Satisfaction</h1>
-          <p>See yourself as the star you picture with our guaranteed and fast services. We deliver like no other.</p>
+          <p>
+            See yourself as the star you picture with our guaranteed and fast
+            services. We deliver like no other.
+          </p>
         </div>
+      </div>
+    </section>
+
+    <div class="review-section">
+      <div class="review-container">
+        <div class="review-box">
+          <div class="profile-box">
+            <div class="profile-pic">
+              <img src="cardbox-assets/alex.jpg" alt="" />
+            </div>
+          </div>
+          <div class="texts">
+            <h2>
+              “The number one thing that has grown our business <br />
+              is offering that customer service experience the rest of the
+              market<br />
+              has not been able to do.”
+            </h2>
+          </div>
+          <div class="name">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40"
+              viewBox="0 -960 960 960"
+              width="40"
+            >
+              <path
+                d="M120-380q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm120 340q-17 0-28.5-11.5T200-240q0-17 11.5-28.5T240-280q17 0 28.5 11.5T280-240q0 17-11.5 28.5T240-200Zm0-160q-17 0-28.5-11.5T200-400q0-17 11.5-28.5T240-440q17 0 28.5 11.5T280-400q0 17-11.5 28.5T240-360Zm0-160q-17 0-28.5-11.5T200-560q0-17 11.5-28.5T240-600q17 0 28.5 11.5T280-560q0 17-11.5 28.5T240-520Zm0-160q-17 0-28.5-11.5T200-720q0-17 11.5-28.5T240-760q17 0 28.5 11.5T280-720q0 17-11.5 28.5T240-680Zm160 340q-25 0-42.5-17.5T340-400q0-25 17.5-42.5T400-460q25 0 42.5 17.5T460-400q0 25-17.5 42.5T400-340Zm0-160q-25 0-42.5-17.5T340-560q0-25 17.5-42.5T400-620q25 0 42.5 17.5T460-560q0 25-17.5 42.5T400-500Zm0 300q-17 0-28.5-11.5T360-240q0-17 11.5-28.5T400-280q17 0 28.5 11.5T440-240q0 17-11.5 28.5T400-200Zm0-480q-17 0-28.5-11.5T360-720q0-17 11.5-28.5T400-760q17 0 28.5 11.5T440-720q0 17-11.5 28.5T400-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 480q-25 0-42.5-17.5T500-400q0-25 17.5-42.5T560-460q25 0 42.5 17.5T620-400q0 25-17.5 42.5T560-340Zm0-160q-25 0-42.5-17.5T500-560q0-25 17.5-42.5T560-620q25 0 42.5 17.5T620-560q0 25-17.5 42.5T560-500Zm0 300q-17 0-28.5-11.5T520-240q0-17 11.5-28.5T560-280q17 0 28.5 11.5T600-240q0 17-11.5 28.5T560-200Zm0-480q-17 0-28.5-11.5T520-720q0-17 11.5-28.5T560-760q17 0 28.5 11.5T600-720q0 17-11.5 28.5T560-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 620q-17 0-28.5-11.5T680-240q0-17 11.5-28.5T720-280q17 0 28.5 11.5T760-240q0 17-11.5 28.5T720-200Zm0-160q-17 0-28.5-11.5T680-400q0-17 11.5-28.5T720-440q17 0 28.5 11.5T760-400q0 17-11.5 28.5T720-360Zm0-160q-17 0-28.5-11.5T680-560q0-17 11.5-28.5T720-600q17 0 28.5 11.5T760-560q0 17-11.5 28.5T720-520Zm0-160q-17 0-28.5-11.5T680-720q0-17 11.5-28.5T720-760q17 0 28.5 11.5T760-720q0 17-11.5 28.5T720-680Zm120 300q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Z"
+              />
+            </svg>
+
+            <h3>
+              Gil Javier
+              <br />
+              <span class="customer">Managing-Director</span>
+            </h3>
+          </div>
+        </div>
+
+        <div class="review-picture">
+          <img
+            src="cardbox-assets/erica-zhou-IHpUgFDn7zU-unsplash.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="review-section">
+      <div class="review-container">
+        <div class="review-picture">
+          <img
+            src="cardbox-assets/a65-design-1eJVSUfT5yA-unsplash.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="review-box">
+          <div class="profile-box">
+            <div class="profile-pic">
+              <img src="cardbox-assets/liliya.jpg" alt="" />
+            </div>
+          </div>
+          <div class="texts">
+            <h2>
+              “Shopping with Blurr always stands out when compared to others
+              <br />
+              because here, you get the best value for every cent you spend, and
+              you get to look<br />
+              the best standard always.”
+            </h2>
+          </div>
+          <div class="name">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40"
+              viewBox="0 -960 960 960"
+              width="40"
+            >
+              <path
+                d="M120-380q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm120 340q-17 0-28.5-11.5T200-240q0-17 11.5-28.5T240-280q17 0 28.5 11.5T280-240q0 17-11.5 28.5T240-200Zm0-160q-17 0-28.5-11.5T200-400q0-17 11.5-28.5T240-440q17 0 28.5 11.5T280-400q0 17-11.5 28.5T240-360Zm0-160q-17 0-28.5-11.5T200-560q0-17 11.5-28.5T240-600q17 0 28.5 11.5T280-560q0 17-11.5 28.5T240-520Zm0-160q-17 0-28.5-11.5T200-720q0-17 11.5-28.5T240-760q17 0 28.5 11.5T280-720q0 17-11.5 28.5T240-680Zm160 340q-25 0-42.5-17.5T340-400q0-25 17.5-42.5T400-460q25 0 42.5 17.5T460-400q0 25-17.5 42.5T400-340Zm0-160q-25 0-42.5-17.5T340-560q0-25 17.5-42.5T400-620q25 0 42.5 17.5T460-560q0 25-17.5 42.5T400-500Zm0 300q-17 0-28.5-11.5T360-240q0-17 11.5-28.5T400-280q17 0 28.5 11.5T440-240q0 17-11.5 28.5T400-200Zm0-480q-17 0-28.5-11.5T360-720q0-17 11.5-28.5T400-760q17 0 28.5 11.5T440-720q0 17-11.5 28.5T400-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 480q-25 0-42.5-17.5T500-400q0-25 17.5-42.5T560-460q25 0 42.5 17.5T620-400q0 25-17.5 42.5T560-340Zm0-160q-25 0-42.5-17.5T500-560q0-25 17.5-42.5T560-620q25 0 42.5 17.5T620-560q0 25-17.5 42.5T560-500Zm0 300q-17 0-28.5-11.5T520-240q0-17 11.5-28.5T560-280q17 0 28.5 11.5T600-240q0 17-11.5 28.5T560-200Zm0-480q-17 0-28.5-11.5T520-720q0-17 11.5-28.5T560-760q17 0 28.5 11.5T600-720q0 17-11.5 28.5T560-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 620q-17 0-28.5-11.5T680-240q0-17 11.5-28.5T720-280q17 0 28.5 11.5T760-240q0 17-11.5 28.5T720-200Zm0-160q-17 0-28.5-11.5T680-400q0-17 11.5-28.5T720-440q17 0 28.5 11.5T760-400q0 17-11.5 28.5T720-360Zm0-160q-17 0-28.5-11.5T680-560q0-17 11.5-28.5T720-600q17 0 28.5 11.5T760-560q0 17-11.5 28.5T720-520Zm0-160q-17 0-28.5-11.5T680-720q0-17 11.5-28.5T720-760q17 0 28.5 11.5T760-720q0 17-11.5 28.5T720-680Zm120 300q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Z"
+              />
+            </svg>
+
+            <h3>
+              Alicia Keen
+              <br />
+              <span class="customer">Consumer-Customer</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="review-section">
+      <div class="review-container">
+        <div class="review-box">
+          <div class="profile-box">
+            <div class="profile-pic">
+              <img src="cardbox-assets/drew.jpg" alt="" />
+            </div>
+          </div>
+          <div class="texts">
+            <h2>
+              “The number one thing that has grown our business <br />
+              is offering that customer service experience the rest of the
+              market<br />
+              has not been able to do.”
+            </h2>
+          </div>
+          <div class="name">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40"
+              viewBox="0 -960 960 960"
+              width="40"
+            >
+              <path
+                d="M120-380q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm120 340q-17 0-28.5-11.5T200-240q0-17 11.5-28.5T240-280q17 0 28.5 11.5T280-240q0 17-11.5 28.5T240-200Zm0-160q-17 0-28.5-11.5T200-400q0-17 11.5-28.5T240-440q17 0 28.5 11.5T280-400q0 17-11.5 28.5T240-360Zm0-160q-17 0-28.5-11.5T200-560q0-17 11.5-28.5T240-600q17 0 28.5 11.5T280-560q0 17-11.5 28.5T240-520Zm0-160q-17 0-28.5-11.5T200-720q0-17 11.5-28.5T240-760q17 0 28.5 11.5T280-720q0 17-11.5 28.5T240-680Zm160 340q-25 0-42.5-17.5T340-400q0-25 17.5-42.5T400-460q25 0 42.5 17.5T460-400q0 25-17.5 42.5T400-340Zm0-160q-25 0-42.5-17.5T340-560q0-25 17.5-42.5T400-620q25 0 42.5 17.5T460-560q0 25-17.5 42.5T400-500Zm0 300q-17 0-28.5-11.5T360-240q0-17 11.5-28.5T400-280q17 0 28.5 11.5T440-240q0 17-11.5 28.5T400-200Zm0-480q-17 0-28.5-11.5T360-720q0-17 11.5-28.5T400-760q17 0 28.5 11.5T440-720q0 17-11.5 28.5T400-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 480q-25 0-42.5-17.5T500-400q0-25 17.5-42.5T560-460q25 0 42.5 17.5T620-400q0 25-17.5 42.5T560-340Zm0-160q-25 0-42.5-17.5T500-560q0-25 17.5-42.5T560-620q25 0 42.5 17.5T620-560q0 25-17.5 42.5T560-500Zm0 300q-17 0-28.5-11.5T520-240q0-17 11.5-28.5T560-280q17 0 28.5 11.5T600-240q0 17-11.5 28.5T560-200Zm0-480q-17 0-28.5-11.5T520-720q0-17 11.5-28.5T560-760q17 0 28.5 11.5T600-720q0 17-11.5 28.5T560-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 620q-17 0-28.5-11.5T680-240q0-17 11.5-28.5T720-280q17 0 28.5 11.5T760-240q0 17-11.5 28.5T720-200Zm0-160q-17 0-28.5-11.5T680-400q0-17 11.5-28.5T720-440q17 0 28.5 11.5T760-400q0 17-11.5 28.5T720-360Zm0-160q-17 0-28.5-11.5T680-560q0-17 11.5-28.5T720-600q17 0 28.5 11.5T760-560q0 17-11.5 28.5T720-520Zm0-160q-17 0-28.5-11.5T680-720q0-17 11.5-28.5T720-760q17 0 28.5 11.5T760-720q0 17-11.5 28.5T720-680Zm120 300q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Z"
+              />
+            </svg>
+
+            <h3>
+              Gil Javier
+              <br />
+              <span class="customer">Consumer-Customer</span>
+            </h3>
+          </div>
+        </div>
+
+        <div class="review-picture">
+          <img src="cardbox-assets/qin-fan-KfqgYzoH3Vk-unsplash.jpg" alt="" />
+        </div>
+      </div>
+    </div> -->
+
+    <section class="price-section" id="item-prices">
+      <div class="price-card-label">
+        <div class="scroll-item">Our Subscription-Plans</div>
+        <div class="scroll-item">Our Subscription-Plans</div>
+        <div class="scroll-item">Our Subscription-Plans</div>
+        <div class="scroll-item">Our Subscription-Plans</div>
+        <div class="scroll-item">Our Subscription-Plans</div>
+        <div class="scroll-item">Our Subscription-Plans</div>
+        <div class="scroll-item">Our Subscription-Plans</div>
+        <div class="scroll-item">Our Subscription-Plans</div>
+      </div>
+      <div class="pricing-container">
+        <article class="pricing-card">
+          <h3>Essential</h3>
+          <div>Essential features</div>
+          <div class="pricing-card__price--original">
+            <s>$59.99</s>
+          </div>
+          <div class="pricing-card__price">$54.99</div>
+          <div class="period">/ month</div>
+          <ul>
+            <li>Basic access to content and resources.</li>
+            <li>Email support with a 48-hour response time.</li>
+            <li>Access to community forums for peer-to-peer support.</li>
+            <li>Monthly newsletter with updates and tips.</li>
+            <li>Limited access to standard tools and features.</li>
+          </ul>
+          <a class="enroll" href="#"> Choose Basic </a>
+        </article>
+        <article class="pricing-card">
+          <h3>Advanced</h3>
+          <div>Advanced features</div>
+          <div class="pricing-card__price--original">
+            <s>$112.00</s>
+          </div>
+          <div class="pricing-card__price">$89.99</div>
+          <div class="period">/ month</div>
+          <ul>
+            <li>All features of the Essential Plan.</li>
+            <li>Priority email support with a 24-hour response time.</li>
+            <li>Access to exclusive webinars and online events.</li>
+            <li>Enhanced tools and features, including analytics.</li>
+            <li>
+              Customizable content experience based on user preferences.
+              asfsfaafsfsafsafsafsaafsfsafsa
+            </li>
+          </ul>
+          <a class="enroll" href="#"> Choose Advanced </a>
+        </article>
+
+        <article class="pricing-card pricing-card--primary">
+          <div class="pricing-card__banner">Most popular</div>
+          <h3>Pro</h3>
+          <div>Advanced features</div>
+          <div class="pricing-card__price--original">
+            <s>$125.00</s>
+          </div>
+          <div class="pricing-card__price">$94.99</div>
+          <div class="period">/ month</div>
+          <ul>
+            <li>All features of the Advanced Plan.</li>
+            <li>Dedicated account manager for personalized assistance.</li>
+            <li>Early access to new features and beta programs.</li>
+            <li>Advanced analytics and detailed reports.</li>
+            <li>High-priority customer service with instant chat support.</li>
+          </ul>
+          <a class="enroll" href="#"> Choose Pro </a>
+        </article>
       </div>
     </section>
 
@@ -148,37 +787,201 @@
             <p>No credit card to start. $20 in free card when you're ready.</p>
           </div>
           <div class="button-row">
-            <button class="demo-button">GET A DEMO</button>
-            <button class="create-button">CREATE ACCOUNT</button>
+            <button
+              id="button_2"
+              onclick="location.href='form-index.html'"
+              title="Sign up"
+              class="demo-button"
+            >
+              GET A DEMO
+            </button>
+
+            <button
+              id="button_3"
+              onclick="location.href='form-index.html'"
+              title="Sign up"
+              class="create-button"
+            >
+              CREATE ACCOUNT
+            </button>
           </div>
         </div>
       </div>
 
-      <div>
+      <div class="v-f">
         <h1>VIDEO FEATURES</h1>
       </div>
 
-      <div class="bottom-landing">
-        <div class="orange">
-          <img src="Assets/src/arrow_downward_FILL0_wght400_GRAD0_opsz24 (1).svg" alt="">
-          <h1>Adding video / <br> Going live</h1>
+      <div class="bottom">
+        <div class="orange colorbox">
+          <img
+            src="Assets/src/arrow_downward_FILL0_wght400_GRAD0_opsz24 (1).svg"
+            alt=""
+          />
+          <h1>
+            Adding video / <br />
+            Going live
+          </h1>
         </div>
-        
-        <div class="pink">
-          <img src="Assets/src/sync_alt_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+
+        <div class="pink colorbox">
+          <img
+            src="Assets/src/sync_alt_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
           <h1>Processing</h1>
         </div>
 
-        <div class="red">
-          <img src="Assets/src/south_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <div class="red colorbox">
+          <img src="Assets/src/south_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
           <h1>Streaming</h1>
         </div>
 
-        <div class="yellow">
-          <img src="Assets/src/arrows_more_up_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        <div class="yellow colorbox">
+          <img
+            src="Assets/src/arrows_more_up_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
           <h1>Managing</h1>
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="footer-line"></div>
+      <div class="footer-wrapper">
+        <section class="footer-top">
+          <div class="footer-headline">
+            <h2>Sign up to our newsletter</h2>
+            <p>Stay up to date with our news and articles</p>
+          </div>
+          <div class="footer-subscribe">
+            <input type="email" spellcheck="false" placeholder="Your Email" />
+            <button>Sign Up</button>
+          </div>
+        </section>
+        <div class="footer-columns">
+          <section class="footer-logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="60"
+              viewBox="0 -960 960 960"
+              width="60"
+            >
+              <path
+                d="M120-380q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm120 340q-17 0-28.5-11.5T200-240q0-17 11.5-28.5T240-280q17 0 28.5 11.5T280-240q0 17-11.5 28.5T240-200Zm0-160q-17 0-28.5-11.5T200-400q0-17 11.5-28.5T240-440q17 0 28.5 11.5T280-400q0 17-11.5 28.5T240-360Zm0-160q-17 0-28.5-11.5T200-560q0-17 11.5-28.5T240-600q17 0 28.5 11.5T280-560q0 17-11.5 28.5T240-520Zm0-160q-17 0-28.5-11.5T200-720q0-17 11.5-28.5T240-760q17 0 28.5 11.5T280-720q0 17-11.5 28.5T240-680Zm160 340q-25 0-42.5-17.5T340-400q0-25 17.5-42.5T400-460q25 0 42.5 17.5T460-400q0 25-17.5 42.5T400-340Zm0-160q-25 0-42.5-17.5T340-560q0-25 17.5-42.5T400-620q25 0 42.5 17.5T460-560q0 25-17.5 42.5T400-500Zm0 300q-17 0-28.5-11.5T360-240q0-17 11.5-28.5T400-280q17 0 28.5 11.5T440-240q0 17-11.5 28.5T400-200Zm0-480q-17 0-28.5-11.5T360-720q0-17 11.5-28.5T400-760q17 0 28.5 11.5T440-720q0 17-11.5 28.5T400-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 480q-25 0-42.5-17.5T500-400q0-25 17.5-42.5T560-460q25 0 42.5 17.5T620-400q0 25-17.5 42.5T560-340Zm0-160q-25 0-42.5-17.5T500-560q0-25 17.5-42.5T560-620q25 0 42.5 17.5T620-560q0 25-17.5 42.5T560-500Zm0 300q-17 0-28.5-11.5T520-240q0-17 11.5-28.5T560-280q17 0 28.5 11.5T600-240q0 17-11.5 28.5T560-200Zm0-480q-17 0-28.5-11.5T520-720q0-17 11.5-28.5T560-760q17 0 28.5 11.5T600-720q0 17-11.5 28.5T560-680Zm0 580q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-720q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm160 620q-17 0-28.5-11.5T680-240q0-17 11.5-28.5T720-280q17 0 28.5 11.5T760-240q0 17-11.5 28.5T720-200Zm0-160q-17 0-28.5-11.5T680-400q0-17 11.5-28.5T720-440q17 0 28.5 11.5T760-400q0 17-11.5 28.5T720-360Zm0-160q-17 0-28.5-11.5T680-560q0-17 11.5-28.5T720-600q17 0 28.5 11.5T760-560q0 17-11.5 28.5T720-520Zm0-160q-17 0-28.5-11.5T680-720q0-17 11.5-28.5T720-760q17 0 28.5 11.5T760-720q0 17-11.5 28.5T720-680Zm120 300q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Zm0-160q-8 0-14-6t-6-14q0-8 6-14t14-6q8 0 14 6t6 14q0 8-6 14t-14 6Z"
+              />
+            </svg>
+            <h2 class="hide">Blurr</h2>
+          </section>
+          <section>
+            <h3>Product</h3>
+            <ul>
+              <li>
+                <a href="#" title="API">API</a>
+              </li>
+              <li>
+                <a href="#" title="Pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="#" title="Documentation">Documentation</a>
+              </li>
+              <li>
+                <a href="#" title="Release Notes">Release Notes</a>
+              </li>
+              <li>
+                <a href="#" title="Status">Status</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Resources</h3>
+            <ul>
+              <li>
+                <a href="#" title="Support">Support</a>
+              </li>
+              <li>
+                <a href="#" title="Sitemap">Sitemap</a>
+              </li>
+              <li>
+                <a href="#" title="Newsletter">Newsletter</a>
+              </li>
+              <li>
+                <a href="#" title="Help Centre">Help Centre</a>
+              </li>
+              <li>
+                <a href="#" title="Investor">Investor</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Company</h3>
+            <ul>
+              <li>
+                <a href="#" title="About Us">About Us</a>
+              </li>
+              <li>
+                <a href="#" title="Blog">Blog</a>
+              </li>
+              <li>
+                <a href="#" title="Careers">Careers</a>
+              </li>
+              <li>
+                <a href="#" title="Press">Press</a>
+              </li>
+              <li>
+                <a href="#" title="Contact">Contact</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Legal</h3>
+            <ul>
+              <li>
+                <a href="#" title="Terms and services"> Terms </a>
+              </li>
+              <li>
+                <a href="#" title="Privacy Policy"> Privacy </a>
+              </li>
+              <li>
+                <a href="#" title="Cookies"> Cookies </a>
+              </li>
+              <li>
+                <a href="#" title="Licenses"> Licenses </a>
+              </li>
+              <li>
+                <a href="#" title="Cookies"> Contact </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="footer-bottom">
+          <small
+            >© My Company Ltd. <span id="year"></span>, All rights
+            reserved</small
+          >
+          <span class="social-links">
+            <a href="#" title="Instagram">
+              <img src="asstes/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#" title="Linkedin">
+              <img src="asstes/linkedin.svg" alt="Linkedin" />
+            </a>
+            <a href="#" title="Twitter">
+              <img src="asstes/twitter.svg" alt="Twitter" />
+            </a>
+            <a href="#" title="Youtube">
+              <img src="asstes/youtube.svg" alt="YouTube" />
+            </a>
+            <a href="#" title="GitHub">
+              <img src="asstes/github.svg" alt="GitHub" />
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="swiper-card.js"></script>
   </body>
 </html>

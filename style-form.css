@@ -1,0 +1,238 @@
+:root {
+  --primary: #605DFF;
+  --primary-dark: #4a00e0;
+  --priary-light: #5DA8FF;
+  --secondary: #1D1D1D;
+  --social-background: #E9E9E9;
+  --social-backgrpund-hover: #dddddd;
+  --text: #1F2346;
+  --white: #FFFFFF;
+  --violet: #8e2de2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--violet); 
+  /* background: rgb(30,41,69) */
+  background-image: url(asstes/adeolu-eletu-DqWEAOHsAvc-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.socials-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.socials-row img {
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+}
+
+.socials-row>a {
+  padding: 8px;
+  border-radius: 99px;
+  width: 100%;
+  min-height: 48px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--text);
+  padding: 8px;
+  background-color: var(--social-background);
+  font-weight: 700;
+}
+
+.socials-row>a:hover {
+  background-color: var(--social-backgrpund-hover);
+}
+
+.login-welcome-row {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.welcome-mssage {
+  max-width: 360px;
+}
+
+.logo {
+  height: 48px;
+  margin: 0 auto;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+  gap: 1rem;
+  /* background: transparent; */
+  background-color: rgba(255, 255, 255, 0.4);
+  border: solid wheat 2px;
+  width: 100%;
+  max-width: 32rem;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+}
+
+.my-form-button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  line-height: 50px;
+  outline: none;
+  font-size: 18px;
+  letter-spacing: .025em;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+  min-height: 50px;
+  width: 100%;
+  border-radius: 99px;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+
+.my-form-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.input-wrapper {
+  position: relative;
+  padding: 15px 0 0;
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  font-size: 1.5rem;
+  color: var(--text);
+  padding-right: 32px;
+  padding-bottom: 8px;
+  line-height: 2rem;
+  outline: 0;
+  border: 0px;
+  width: 100%;
+  vertical-align: middle;
+  padding-bottom: 3px solid var(--secondary);
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.input-field::placeholder {
+  color: transparent;
+}
+
+.input-label {
+  user-select: none;
+}
+
+.input-field:placeholder-shown.input-label {
+  cursor: text;
+  color: var(--text);
+  top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.input-label.input-field:focus~.input-label {
+  position: absolute;
+  top: -0.5rem;
+  display: block;
+  font-size: 1.2rem;
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.input-field:focus~.input-label {
+  color: var(--primary);
+}
+
+.input-field:focus {
+  border-bottom: 3px solid var(--primary);
+}
+
+.input-field:focus~svg {
+  stroke: var(--primary);
+}
+
+.input-icon {
+  position: absolute;
+  right: -14px;
+  bottom: -11px;
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+  transform: rotate3d(-760deg);
+  cursor: pointer;
+}
+
+.logo-box:hover {
+  transform: rotate(720deg);
+  filter: saturate(150);
+  transition: cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+}
+
+.my-form-actions {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  color: var(--secondary);
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.my-form-actions a {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.my-form-actions a:hover {
+  text-decoration: underline;
+}
+
+.my-form-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.opens {
+  font-size: medium;
+  background-color: transparent;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 30px;
+  border: none;
+}
+
+.opens:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #ccc;
+    border-radius: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}

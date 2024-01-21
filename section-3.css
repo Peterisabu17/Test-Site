@@ -1,11 +1,16 @@
 .section-3 {
-  background-color: rgb(49, 45, 45);
+  /* background-color: rgb(49, 45, 45); */
+  /* background-color: #fff; */
+  background-image: url(asstes/blake-wisz-Xn5FbEM9564-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   margin-top: 0px;
   font-family: 'Jura';
 }
 
 .section-3 h1 {
-  color: white;
+  /* color: white; */
+  color: black;
   margin-top: 0px;
 }
 
@@ -36,6 +41,17 @@
   margin-bottom: 50px;
 }
 
+.demo-button:hover {
+  background: #ccc;
+  color: black;
+}
+
+
+.create-button:hover {
+  background: black;
+  color: #ccc;
+}
+
 .button-row {
   display: flex;
   flex-direction: column;
@@ -55,18 +71,23 @@
 }
 
 .text-row p {
-  color: rgb(182, 178, 178);
+  color: rgb(211, 208, 208);
 }
 
-.bottom-landing {
+.bottom {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+.v-f {
+  margin-bottom: 30px;
+}
+
+
 .orange, .pink, .red, .yellow {
   width: 350px;
-  height: 200px;
+  height: 300px;
   padding-top: 90px;
   border-style: solid;
   border-color: black;
@@ -75,41 +96,45 @@
   margin-bottom: 80px;
 }
 
-.bottom-landing img {
+.bottom img {
   width: 50px;
   height: 50px;
 }
 
-.bottom-landing img:hover {
+.bottom img:hover {
   transform: rotate(-720deg);
   filter: saturate(2.0);
   transition: cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
 }
 
-.bottom-landing h1 {
+.bottom h1 {
   color: black;
 }
 
 .orange {
-  background: orangered;
+  background: rgb(255, 69, 0, 0.78);
 }
 .pink {
-  background: rgb(255, 5, 159);
+  background: rgb(255, 5, 159, 0.78);
 }
 .red {
-  background: red;
+  background: rgb(255, 0, 0, 0.78);
 }
 .yellow {
-  background: orange;
+  background: rgb(255, 165, 0, 0.78);
 }
 
-/* .bottom-landing-2 {
+.colorbox {
+  border: none;
+}
+
+/* .bottom-2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.orange-landing, .pink-landing, .red-landing, .yellow-landng {
+.orange, .pink, .red, .yellow-landng {
   width: 350px;
   height: 200px;
   padding-top: 90px;
@@ -119,3 +144,52 @@
   border-right-width: 0px;
 }
  */
+ 
+
+ @media (max-width: 769px) {
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-row {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-row {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottom {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .colorbox {
+    border: none;
+    bottom: none;
+    margin-left: 20%;
+    width: 400px;
+    /* height: 400px; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+ }
