@@ -129,7 +129,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
   }
 
   .trustee-vendors {
@@ -189,5 +189,13 @@
 @media (max-width: 450px) {
   .section-2 {
     width: 100%;
+  }
+
+  .trustee-buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
   }
 }
