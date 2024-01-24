@@ -125,6 +125,7 @@
 
 @media (max-width: 767px) {
   .trustee-buttons {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -132,11 +133,18 @@
   }
 
   .trustee-vendors {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    gap: 0;
+    /* flex-wrap: wrap;
     text-align: center;
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
   }
 
   .trustee {
@@ -153,7 +161,8 @@
 
   .highlight-box {
     width: 80%;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    /* margin-bottom: 40px; */
   }
 }
 

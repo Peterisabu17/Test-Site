@@ -79,3 +79,9 @@ body {
     justify-content: center;
   }
 }
+
+@media (max-width: 767px) {
+  .section-info h1 {
+    font-size: 50px;
+  }
+}

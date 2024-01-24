@@ -65,7 +65,7 @@
 }
 
 @media (max-width: 767px) {
-  .slide-container, .swiper {
+  .swiper .slide-content {
     display: none;
   }
 }

@@ -219,3 +219,14 @@
   margin-left: 100px;
   animation: slide 15s linear infinite;
 }
+
+@media (max-width: 767px) {
+  .pricing-container {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+  }
+}
