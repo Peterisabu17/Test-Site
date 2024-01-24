@@ -25,7 +25,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: var(--violet); 
+  /* background: var(--violet);  */
   /* background: rgb(30,41,69) */
   background-image: url(asstes/adeolu-eletu-DqWEAOHsAvc-unsplash.jpg);
   background-size: cover;
