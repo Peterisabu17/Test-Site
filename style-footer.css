@@ -217,7 +217,7 @@ footer {
 
 /*? mobile */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     .footer-top {
         display: flex;
         flex-direction: column;
@@ -233,7 +233,7 @@ footer {
         justify-content: center;
         margin: 0 auto;
     }
-}
+} */
 
 
 

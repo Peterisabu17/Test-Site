@@ -146,7 +146,7 @@
  */
  
 
- @media (max-width: 769px) {
+ /* @media (max-width: 769px) {
   .section-3 {
     display: flex;
     flex-direction: column;
@@ -185,11 +185,10 @@
     bottom: none;
     margin-left: 20%;
     width: 400px;
-    /* height: 400px; */
     text-align: center;
     justify-content: center;
     align-items: center;
   }
 
 
- }
+ } */

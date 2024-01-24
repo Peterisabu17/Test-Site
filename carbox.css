@@ -109,10 +109,9 @@
 .name svg {
   animation: rotate infinite 2s linear; /* Adjust the duration and timing function as needed */
 }
-
-@media (max-width: 769px) {
+/*  */
+/* @media (max-width: 769px) {
   .review-container {
-    /* margin-left: 200px; */
     flex-wrap: wrap;
     text-align: center;
     display: grid; 
@@ -137,6 +136,6 @@
   }
 
 
-}
+} */
 
 
