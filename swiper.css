@@ -64,8 +64,8 @@
   filter: saturate(3.0);
 }
 
-/* @media (max-width: 769px) {
+@media (max-width: 767px) {
   .slide-container, .swiper {
     display: none;
   }
-} */
+}

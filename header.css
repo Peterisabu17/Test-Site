@@ -262,7 +262,7 @@ body {
 }
 
 
-/* @media (max-width: 769px) {
+@media (max-width: 767px) {
     .hide {
         display: none;
     }
@@ -287,4 +287,4 @@ body {
         stroke: var(--link-gray);
         width: 20px;
     }
-} */
+}

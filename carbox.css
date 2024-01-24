@@ -110,7 +110,7 @@
   animation: rotate infinite 2s linear; /* Adjust the duration and timing function as needed */
 }
 /*  */
-/* @media (max-width: 769px) {
+@media (max-width: 767px) {
   .review-container {
     flex-wrap: wrap;
     text-align: center;
@@ -136,6 +136,6 @@
   }
 
 
-} */
+}
 
 
