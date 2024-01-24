@@ -140,7 +140,7 @@
 
 @media (max-width: 450px) {
   .review-container {
-    display: none;
+    width: 100%;
   }
 }
 

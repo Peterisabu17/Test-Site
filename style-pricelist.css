@@ -230,3 +230,9 @@
 
   }
 }
+
+@media (max-width: 450px) {
+  .priving-container {
+    width: 100%;
+  }
+}

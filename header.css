@@ -291,6 +291,7 @@ body {
 
 @media (max-width: 450px) {
     .menu__wrapper {
+        width: 100%;
         display: flex;
         position: fixed;
         justify-content: space-between;

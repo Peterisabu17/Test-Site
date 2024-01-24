@@ -196,8 +196,9 @@
  }
 
  @media (max-width: 450px) {
-  .under-section .section-box {
-    display: none;
+  .section-3 {
+    width: 100px;
+
   }
 
  

@@ -185,3 +185,9 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 450px) {
+  .section-2 {
+    width: 100%;
+  }
+}

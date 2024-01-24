@@ -80,8 +80,10 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 450px) {
   .section-info h1 {
+    width: 100%;
     font-size: 50px;
   }
 }
+
