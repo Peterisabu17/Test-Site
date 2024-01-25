@@ -64,14 +64,14 @@
   filter: saturate(3.0);
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .swiper .slide-content {
     display: none;
   }
-}
+} */
 
-@media (max-width: 45px) {
+/* @media (max-width: 450px) {
   .swiper {
     width: 100%;
   }
-}
+} */

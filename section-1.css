@@ -81,6 +81,10 @@ body {
 }
 
 @media (max-width: 450px) {
+  * {
+    overflow-x: hidden;
+  }
+
   .section-info {
     width: 100%;
   }
