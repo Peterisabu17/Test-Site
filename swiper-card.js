@@ -7,10 +7,6 @@ var swiper = new Swiper(".slide-content", {
     enabled: true,
   },
   breakpoints: {
-    326: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
     769: {
       slidesPerView: 2,
       slidesPerGroup: 2,
