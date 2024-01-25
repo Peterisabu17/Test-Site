@@ -201,6 +201,11 @@
     justify-content: center;
   }
 
+  .trustee-vendors .trustee {
+    width: 120px;
+    height: 120px;
+  }
+
   .trustee-buttons .trustee:hover {
     transition: linear 0.5s;
     transform: none;

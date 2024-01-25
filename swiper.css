@@ -71,7 +71,7 @@
 } */
 
 @media (max-width: 450px) {
-  .slide-container {
+  .slide-container .slide-content {
     display: none;
   }
 }
