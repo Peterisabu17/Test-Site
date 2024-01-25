@@ -192,11 +192,18 @@
   }
 
   .trustee-buttons {
+    gap: 0;
     width: 100%;
     margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
+  }
+
+  .trustee-buttons .trustee:hover {
+    transition: linear 0.5s;
+    transform: none;
+    filter: grayscale(5.0);
   }
 }
