@@ -71,7 +71,7 @@
 } */
 
 @media (max-width: 450px) {
-  .swiper {
+  .slide-container {
     display: none;
   }
 }
