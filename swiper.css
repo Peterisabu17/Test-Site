@@ -72,7 +72,7 @@
 
 @media (max-width: 450px) {
   .slide-container {
-    overflow-x: auto;
+    overflow-x: visible;
     max-width: 100%;
     width: 100%;
     /* background-color: gray; */
