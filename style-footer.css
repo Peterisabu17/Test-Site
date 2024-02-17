@@ -176,7 +176,7 @@ footer {
   gap: 8px;
   padding: 16px 0px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-bottom > small {

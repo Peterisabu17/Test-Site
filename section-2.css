@@ -181,8 +181,11 @@
   .highlight-section {
     gap: 0;
     margin: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .highlight-section p {
@@ -192,6 +195,8 @@
   }
 
   .highlight-box {
+    width: 100%;
+    height: auto;
     margin-bottom: 0;
     margin-top: 30px;
   }
@@ -250,6 +255,8 @@
     margin: 0;
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   .highlight-section p {
@@ -259,6 +266,8 @@
   }
 
   .highlight-box {
+    width: 100%;
+    height: auto;
     margin-bottom: 0;
     margin-top: 30px;
   }
