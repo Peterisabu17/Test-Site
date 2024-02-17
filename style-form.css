@@ -1,12 +1,12 @@
 :root {
-  --primary: #605DFF;
+  --primary: #605dff;
   --primary-dark: #4a00e0;
-  --priary-light: #5DA8FF;
-  --secondary: #1D1D1D;
-  --social-background: #E9E9E9;
+  --priary-light: #5da8ff;
+  --secondary: #1d1d1d;
+  --social-background: #e9e9e9;
   --social-backgrpund-hover: #dddddd;
-  --text: #1F2346;
-  --white: #FFFFFF;
+  --text: #1f2346;
+  --white: #ffffff;
   --violet: #8e2de2;
 }
 
@@ -19,7 +19,6 @@
 body {
   font-size: 16px;
   font-family: sans-serif;
-  height: 100vh;
   padding: 1rem;
   display: flex;
   height: 100vh;
@@ -30,6 +29,10 @@ body {
   background-image: url(asstes/adeolu-eletu-DqWEAOHsAvc-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.my-form {
+  height: 100%;
 }
 
 .socials-row {
@@ -44,7 +47,7 @@ body {
   vertical-align: bottom;
 }
 
-.socials-row>a {
+.socials-row > a {
   padding: 8px;
   border-radius: 99px;
   width: 100%;
@@ -61,7 +64,7 @@ body {
   font-weight: 700;
 }
 
-.socials-row>a:hover {
+.socials-row > a:hover {
   background-color: var(--social-backgrpund-hover);
 }
 
@@ -105,15 +108,15 @@ body {
   line-height: 50px;
   outline: none;
   font-size: 18px;
-  letter-spacing: .025em;
+  letter-spacing: 0.025em;
   text-decoration: none;
   cursor: pointer;
   font-weight: 800;
   min-height: 50px;
   width: 100%;
   border-radius: 99px;
-  transition: all .3s ease;
-  -webkit-transition: all .3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
 
 .my-form-button:hover {
@@ -156,7 +159,7 @@ body {
   font-size: 1.2rem;
 }
 
-.input-label.input-field:focus~.input-label {
+.input-label.input-field:focus ~ .input-label {
   position: absolute;
   top: -0.5rem;
   display: block;
@@ -165,7 +168,7 @@ body {
   transition: 0.3s;
 }
 
-.input-field:focus~.input-label {
+.input-field:focus ~ .input-label {
   color: var(--primary);
 }
 
@@ -173,7 +176,7 @@ body {
   border-bottom: 3px solid var(--primary);
 }
 
-.input-field:focus~svg {
+.input-field:focus ~ svg {
   stroke: var(--primary);
 }
 
@@ -229,10 +232,10 @@ body {
 }
 
 .opens:hover {
-    cursor: pointer;
-    color: black;
-    background-color: #ccc;
-    border-radius: 1rem;
-    padding-left: 10px;
-    padding-right: 10px;
+  cursor: pointer;
+  color: black;
+  background-color: #ccc;
+  border-radius: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
