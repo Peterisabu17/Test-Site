@@ -72,6 +72,9 @@ body {
 }
 
 @media (max-width: 759px) {
+  body {
+    overflow-x: hidden;
+  }
   /* section 1 */
   .section-info h1 {
     font-size: 40px;
@@ -82,6 +85,10 @@ body {
   }
 }
 @media (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .section-info h1 {
     font-size: 30px;
   }
