@@ -69,6 +69,7 @@ body {
 }
 
 .login-welcome-row {
+  color: white;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -124,6 +125,7 @@ body {
 }
 
 .input-wrapper {
+  color: white;
   position: relative;
   padding: 15px 0 0;
   margin-bottom: 0.5rem;
@@ -217,6 +219,7 @@ body {
 }
 
 .my-form-row {
+  color: white;
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -224,6 +227,7 @@ body {
 
 .opens {
   font-size: medium;
+  color: white;
   background-color: transparent;
   text-align: center;
   font-weight: 800;
@@ -238,4 +242,20 @@ body {
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media (max-width: 375px) {
+  .my-form {
+    height: auto;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+@media (max-width: 759px) {
+  .my-form {
+    height: auto;
+    background-color: transparent;
+    border: none;
+  }
 }
